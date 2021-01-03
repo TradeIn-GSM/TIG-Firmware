@@ -1,0 +1,1 @@
+(trap 'kill 0' SIGINT; python3 app.py & mjpg_streamer -i "input_uvc.so -d /dev/video0" -o "output_http.so -p 8000 -w /usr/local/share/mjpg-streamer/www/")
